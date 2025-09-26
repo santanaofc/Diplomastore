@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diplomas Store - Serviços de regularização de diplomas e documentos educacionais reconhecidos pelo MEC. Inclui Diploma, Histórico Escolar, Certificado de Conclusão e mais.">
+    <title>Diplomas Store - Diplomas e Documentos Reconhecidos pelo MEC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        
+        body {
+            @apply bg-gray-50 text-gray-800 antialiased;
+        }
+        
+        .btn-primary {
+            @apply bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition duration-200;
+        }
+        
+        .btn-whatsapp {
+            @apply bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-200;
+        }
+        
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg border border-gray-100;
+        }
+        
+        .section-title {
+            @apply text-3xl font-bold text-center mb-8 text-blue-900;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #065f46 100%);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre diplomas." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition duration-200">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="bg-blue-800 text-white p-3 rounded-lg mr-3">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-blue-800">DIPLOMAS STORE</h1>
+                        <p class="text-sm text-gray-600">Reconhecido pelo MEC</p>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#inicio" class="text-gray-700 hover:text-blue-800 font-medium">Início</a></li>
+                        <li><a href="#servicos" class="text-gray-700 hover:text-blue-800 font-medium">Serviços</a></li>
+                        <li><a href="#documentos" class="text-gray-700 hover:text-blue-800 font-medium">Documentos</a></li>
+                        <li><a href="#sobre" class="text-gray-700 hover:text-blue-800 font-medium">Sobre</a></li>
+                        <li><a href="#contato" class="text-gray-700 hover:text-blue-800 font-medium">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre diplomas." 
+                   target="_blank" 
+                   class="btn-whatsapp hidden md:flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+                
+                <button class="md:hidden text-gray-700" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden mt-4 bg-white border-t pt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-800 font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-800 font-medium">Serviços</a>
+                    <a href="#documentos" class="text-gray-700 hover:text-blue-800 font-medium">Documentos</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-blue-800 font-medium">Sobre</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-800 font-medium">Contato</a>
+                    <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre diplomas." 
+                       target="_blank" 
+                       class="btn-whatsapp text-center">
+                        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                    <i class="fas fa-award text-5xl mb-6"></i>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Diplomas Reconhecidos pelo MEC</h2>
+                    <p class="text-xl mb-8 opacity-90">Regularize sua situação educacional com documentos 100% legais e válidos em todo território nacional</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://wa.me/5541984903032?text=Olá! Gostaria de regularizar meu diploma." 
+                           target="_blank" 
+                           class="bg-white text-blue-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-200">
+                            Falar no WhatsApp
+                        </a>
+                        <a href="#contato" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-800 transition duration-200">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="card text-center">
+                    <div class="bg-blue-100 text-blue-800 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-file-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Diplomas de Graduação</h3>
+                    <p class="text-gray-600 mb-4">Regularização de diplomas de cursos superiores com reconhecimento MEC</p>
+                    <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Bacharelado
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Licenciatura
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Tecnólogo
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre diploma de graduação." 
+                       target="_blank" 
+                       class="btn-primary inline-block">
+                        Solicitar
+                    </a>
+                </div>
+                
+                <!-- Serviço 2 -->
+                <div class="card text-center">
+                    <div class="bg-green-100 text-green-800 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Certificados Técnicos</h3>
+                    <p class="text-gray-600 mb-4">Documentação para cursos técnicos profissionalizantes reconhecidos</p>
+                    <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Cursos Técnicos
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Qualificação Profissional
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Certificados de Especialização
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre certificado técnico." 
+                       target="_blank" 
+                       class="btn-primary inline-block">
+                        Solicitar
+                    </a>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="card text-center">
+                    <div class="bg-purple-100 text-purple-800 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                        <i class="fas fa-stamp text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Reconhecimento de Firmas</h3>
+                    <p class="text-gray-600 mb-4">Autenticação e reconhecimento de documentos educacionais</p>
+                    <ul class="text-left text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Autenticação em Cartório
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Reconhecimento de Firmas
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            Legalização de Documentos
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5541984903032?text=Olá! Gostaria de informações sobre reconhecimento de firma." 
+                       target="_blank" 
+                       class="btn-primary inline-block">
+                        Solicitar
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#documentos" class="text-blue-800 hover:text-blue-600 font-semibold text-lg">Ver todos os documentos entregues →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentos Entregues Section -->
+    <section id="documentos" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title">Documentos Entregues</h2>
+            <p class="text-center text-gray
